@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="16dp"
+    android:gravity="end|bottom"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/numberField"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:gravity="end"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Headline3"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/resultField"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:gravity="end"
+        android:text="0"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Headline3"
+        android:textColor="@color/black" />
+
+
+    <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="4"
+        tools:context=".MainActivity">
+
+        <Button
+            android:id="@+id/buttonClear"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:layout_columnSpan="2"
+            android:layout_gravity="start"
+            android:text="C"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Headline4" />
+
+        <Button
+            android:id="@+id/buttonDivide"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:layout_columnSpan="2"
+            android:layout_gravity="end"
+            android:text="/"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Headline4" />
+
+        <!-- New row -->
+
+        <Button
+            android:id="@+id/buttonSeven"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill"
+            android:text="7"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Headline4" />
+
+        <Button
+            android:id="@+id/buttonEight"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill"
+            android:text="8"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Headline4" />
+
+        <Button
+            android:id="@+id/buttonNine"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill"
+            android:text="9"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Headline4" />
+
+        <Button
+            android:id="@+id/buttonMultiply"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill"
+            android:text="*"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Headline4" />
+
+        <!-- New row -->
+
+        <Button
+            android:id="@+id/buttonFour"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill"
+            android:text="4"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Headline4" />
+
+        <Button
+            android:id="@+id/buttonFive"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill"
+            android:text="5"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Headline4" />
+
+        <Button
+            android:id="@+id/buttonSix"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill"
+            android:text="6"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Headline4" />
+
+        <Button
+            android:id="@+id/buttonMinus"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill"
+            android:text="-"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Headline4" />
+
+        <!-- New row -->
+
+        <Button
+            android:id="@+id/buttonOne"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill"
+            android:text="1"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Headline4" />
+
+        <Button
+            android:id="@+id/buttonTwo"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill"
+            android:text="2"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Headline4" />
+
+        <Button
+            android:id="@+id/buttonThree"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill"
+            android:text="3"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Headline4" />
+
+        <Button
+            android:id="@+id/buttonPlus"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill"
+            android:text="+"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Headline4" />
+
+        <!-- New row -->
+
+        <Button
+            android:id="@+id/buttonZero"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:layout_columnSpan="2"
+            android:layout_gravity="end"
+            android:text="0"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Headline4" />
+
+        <Button
+            android:id="@+id/buttonDot"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill"
+            android:text="."
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Headline4" />
+
+        <Button
+            android:id="@+id/buttonEqual"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill"
+            android:text="="
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Headline4" />
+
+    </GridLayout>
+
+</LinearLayout>
